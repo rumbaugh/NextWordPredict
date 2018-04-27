@@ -2,7 +2,7 @@
 title: "Next Word Prediction"
 author: "Nick Rumbaugh"
 date: "April 26, 2018"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
