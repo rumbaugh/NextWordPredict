@@ -65,7 +65,8 @@ p\_{KN}\\left(w\_i|w^{i-1}\_{i-n+1}\\right) = \\frac{{\\rm max}\\left(c\\left(w^
 \\delta\\frac{|\\{w':0 &lt; c\\left(w^{i-1}\_{i-n+1}, w'\\right)\\}|}{\\Sigma\_{w'}c\\left(w^{i}\_{i-n+1}\\right)}p\_{KN}\\left(w\_i|w^{i-1}\_{i-n+2}\\right)\\\\
 p\_{KN}\\left(w\_i\\right) = \\frac{|\\{w':0 &lt; c\\left(w', w\_i\\right)\\}|}{|\\{(w', w''):0 &lt; c\\left(w'', w'\\right)\\}|}=\\frac{{\\rm Number\\ of\\ unique\\ bigrams\\ ending\\ with\\ }w\_i}{{\\rm Number\\ of\\ bigrams}}
 $$
- Note: If you are viewing this as a markdown file, the LaTe$\\Chi$ equations can't render. An html file can be found [here](https://rumbaugh.github.io/DataScienceCapstone/).
+
+Note: If you are viewing this as a markdown file, the LaTe*χ* equations can't render. An html file can be found [here](https://rumbaugh.github.io/DataScienceCapstone/).
 
 We are trying to calculate the probability corresponding to a specific sequence of n words, *w*<sub>*i*</sub> (the last word) through *w*<sub>*i* − *n* + 1</sub> (the first word). This is the probability of the last word, given the sequence of n-1 words preceding it. First, you count the number of times the full n-gram occurs in the corpus, subtracting off the discount value *δ* to weight down infrequent ones. You divide this by the number n-grams that start with the corresponding (n-1)-gram. You add to this another term proportional to a recursive Kneser-Ney probability with the first word removed. The equation is recursive down to unigram probabilities, which are just the number of unique bigrams that end with the given word divided by the total number of bigrams. This is meant to give a probability that reflects finding that word in an unfamiliar context.
 
