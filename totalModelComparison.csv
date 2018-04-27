@@ -1,0 +1,5 @@
+"", "PredictTimesec", "PredictMemoryMB", "Accuracy"
+"5-gram",  210, 490, 21.6
+"Trigram",  160, 300, 21.4
+"Trigram (opt.)",  25, 14, 20.5
+"LSTM", 2100, 210, 13
