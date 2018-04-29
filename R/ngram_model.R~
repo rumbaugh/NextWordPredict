@@ -1,9 +1,0 @@
-
-
-options(java.parameters = "-Xmx8000m") #solved a Java memory error
-library(tm)
-library(RWeka)
-library(reshape2)
-library(knitr)
-library(stringr)
-library(data.table)

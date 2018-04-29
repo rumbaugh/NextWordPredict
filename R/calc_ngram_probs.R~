@@ -1,5 +1,0 @@
-### This code calculates the probabilities of every N-gram in a
-### corpus occuring, using Kneser-Ney smoothing. The final model
-### used for the R Shiny App used unigrams, bigrams, and trigrams,
-### with the mincnt parameter (lowest count N-grams to include)
-### set at 10. 
